@@ -1,0 +1,84 @@
+    /* alignment of name in nav */
+    .navbar-sai {
+        padding-top: 34px;
+        padding-bottom: 34px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar-sai {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        }
+    }
+
+    .probootstrap-navbar .navbar-sai {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 30px;
+        text-transform: uppercase;
+        /* background: url(../img/logo.png) no-repeat left 100%; */
+        top: 31px;
+        position: relative;
+        width: 160px;
+        height: 43px;
+        text-indent: -999999px;
+        -webkit-transition: .2s all;
+        transition: .2s all;
+    }
+
+    @media screen and (max-width: 768px) {
+        .probootstrap-navbar .navbar-sai {
+        top: 5px !important;
+        background-position: left 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .probootstrap-navbar .navbar-sai {
+        top: 6px !important;
+        }
+    }
+  
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        .probootstrap-navbar .navbar-sai {
+        position: relative;
+        width: 160px;
+        height: 43px;
+        /* background: url(../img/logo@2x.png) no-repeat left 100%; */
+        background-size: cover;
+        }
+    }
+
+    .probootstrap-navbar.scrolled .parent-nav-link-padding, .probootstrap-navbar.scrolled .navbar-sai, .probootstrap-navbar.scrolled .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+      
+    .probootstrap-navbar.scrolled .navbar-sai {
+        top: 10px;
+        background-position: left 100%;
+    }
+
+    .container-fluid .navbar-sai {
+        margin-left: 15px;
+    }
+    
+    /* screen background */
+    .screen{
+        background-color: white;
+    }
+
+    /* navigation above part visibility */
+    .probootstrap-header-top {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .probootstrap-navbar .navbar-nav > li.active > a {
+        background: none !important;
+        color: #d8a025 !important;
+      }
