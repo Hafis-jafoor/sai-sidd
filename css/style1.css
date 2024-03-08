@@ -39,7 +39,13 @@
 
     @media screen and (max-width: 480px) {
         .probootstrap-navbar .navbar-sai {
-        top: 6px !important;
+        top: 0px !important;
+        }
+        .probootstrap-navbar .navbar-sai .heading{
+            font-size: 10px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: #152c55;
         }
     }
   
@@ -81,4 +87,52 @@
     .probootstrap-navbar .navbar-nav > li.active > a {
         background: none !important;
         color: #d8a025 !important;
+    }
+
+    /* Define the keyframes for the jiggling effect */
+    @keyframes jiggling {
+        0% { transform: rotate(-5deg); }
+        50% { transform: rotate(5deg); }
+        100% { transform: rotate(-5deg); }
+    }
+
+    /* Apply the animation to the anchor tag */
+    .jiggle:hover {
+        animation: jiggling 0.3s ease-in-out infinite;
+    }
+
+    .nav-tabs.probootstrap-tabs > li > a, .nav-pills.probootstrap-tabs > li > a {
+        border-radius: 0px;
+        padding: 20px 30px;
+        background: #152c55;
+        color: #ffffff;
+        font-size: 16px;
+        border: none !important;
+    }
+
+    .nav-tabs.probootstrap-tabs > li > a:hover, .nav-pills.probootstrap-tabs > li > a:hover {
+        background: #d8a025;
       }
+
+    .probootstrap-featured-news-box:hover .probootstrap-text, .probootstrap-featured-news-box:focus .probootstrap-text {
+        background: #d8a025;
+        top: -40px;
+        -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .probootstrap-featured-news-box .probootstrap-text {
+        position: relative;
+        z-index: 2;
+        background: #ffffff;
+        padding: 20px;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+        margin-left: 10px;
+        margin-right: 10px;
+        top: -30px;
+        -webkit-transition: .3s all;
+        transition: .3s all;
+        border-bottom: 3px solid #152c55;
+      }
+      
