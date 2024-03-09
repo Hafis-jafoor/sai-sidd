@@ -101,6 +101,8 @@
         animation: jiggling 0.3s ease-in-out infinite;
     }
 
+    
+    /* color and hovering on two buttons(upcoming and featured) */
     .nav-tabs.probootstrap-tabs > li > a, .nav-pills.probootstrap-tabs > li > a {
         border-radius: 0px;
         padding: 20px 30px;
@@ -112,8 +114,22 @@
 
     .nav-tabs.probootstrap-tabs > li > a:hover, .nav-pills.probootstrap-tabs > li > a:hover {
         background: #d8a025;
-      }
-
+    }
+    
+    .nav-tabs.probootstrap-tabs > li > a:active, .nav-tabs.probootstrap-tabs > li > a:focus, .nav-pills.probootstrap-tabs > li > a:active, .nav-pills.probootstrap-tabs > li > a:focus {
+        outline: none;
+    }
+      
+    .nav-tabs.probootstrap-tabs > li.active > a, .nav-pills.probootstrap-tabs > li.active > a {
+        background: #ffffff;
+        color: #000000;
+    }
+      
+    .nav-tabs.probootstrap-tabs.no-border, .nav-pills.probootstrap-tabs.no-border {
+        border-bottom: none;
+    }
+    
+      /* boxes hovering color */
     .probootstrap-featured-news-box:hover .probootstrap-text, .probootstrap-featured-news-box:focus .probootstrap-text {
         background: #d8a025;
         top: -40px;
@@ -135,4 +151,63 @@
         transition: .3s all;
         border-bottom: 3px solid #152c55;
       }
+
+      /* make same height to all featured courses */
+      .equal-height {
+        display: flex;
+      }
+      
+      .equal-height [class*="col-"] {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .equal-height .probootstrap-service-2 {
+        flex: 1;
+    }
+    
+    /* courses styles */
+    .probootstrap-service-2 {
+        border: 1px solid white;
+        background-color: white;
+    }
+      
+    .probootstrap-service-2 .text {
+        background: white;
+    }
+    
+    .probootstrap-service-2 .image {
+        background: white;
+    }
+    .probootstrap-service-2 .text h3 {
+        color: #152c55;
+        font-weight: bold;
+    }
+      
+    .probootstrap-service-2 .text p {
+        color: black;
+        margin-top: 5px;
+    }
+      
+    .probootstrap-service-2 .text a.jiggle1 {
+        background-color: #152c55;
+        color: white;
+    }
+      
+    .probootstrap-service-2 .text .enrolled-count {
+        color: black;
+    }
+    
+    .probootstrap-service-2 {
+        transition: margin-top 0.3s ease;
+      }
+      
+      .probootstrap-service-2:hover {
+        margin-top: -30px;
+      }
+      
+    
+      
+    
+      
       
