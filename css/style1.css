@@ -37,12 +37,23 @@
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 380px) {
         .probootstrap-navbar .navbar-sai {
         top: 0px !important;
         }
         .probootstrap-navbar .navbar-sai .heading{
-            font-size: 10px;
+            font-size: 11px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: #152c55;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .probootstrap-navbar .navbar-sai {
+        top: 0px !important;
+        }
+        .probootstrap-navbar .navbar-sai .heading{
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
             color: #152c55;
@@ -100,7 +111,7 @@
     .jiggle:hover {
         animation: jiggling 0.3s ease-in-out infinite;
     }
-
+    
     
     /* color and hovering on two buttons(upcoming and featured) */
     .nav-tabs.probootstrap-tabs > li > a, .nav-pills.probootstrap-tabs > li > a {
@@ -170,6 +181,7 @@
     .probootstrap-service-2 {
         border: 1px solid white;
         background-color: white;
+        margin-bottom: 20px; /* Adjust the value to set the desired gap */
     }
       
     .probootstrap-service-2 .text {
@@ -193,21 +205,98 @@
         background-color: #152c55;
         color: white;
     }
-      
+    
+    .probootstrap-service-2 .text a.jiggle2 {
+        background-color: #d8a025;
+        color: white;
+    }
     .probootstrap-service-2 .text .enrolled-count {
         color: black;
     }
     
     .probootstrap-service-2 {
         transition: margin-top 0.3s ease;
+    }
+      
+    .probootstrap-service-2:hover {
+    margin-top: -15px;
+    }
+    
+    /* one course seperate */
+    .center1{
+        margin-top: 160px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .center1{
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 990px) {
+        .center1{
+            margin-top: 0px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .probootstrap-service-2 .text .btn {
+          margin-bottom: 10px; /* Adjust the value as needed */
+        }
       }
       
-      .probootstrap-service-2:hover {
-        margin-top: -30px;
-      }
-      
+
+    /* why us section */
+    .section-heading h2 {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
     
-      
+    .service .icon i {
+        color: #152c55;
+    }
+
+    .custom-section{
+        /* background: linear-gradient(white,black); */
+        margin-top: 30px;
+    }
     
-      
-      
+    .lead{
+        color: black;
+    }
+    .hover-effect{
+        transition: transform 0.3s ease;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        /* font-weight: bold; */
+    }
+    .hover-effect1{
+        transition: transform 0.3s ease;
+        color: #152c55;
+
+    }
+    .hover-effect:hover {
+        transform: translateX(5px);
+    }
+    .hover-effect1:hover {
+        transform: translateX(5px);
+    }
+    
+    .probootstrap-cta {
+        padding: 3em 0;
+        background: #d8a025;
+        color: #ffffff;
+    }
+
+    .probootstrap-cta .btn.btn-ghost {
+        background: #152c55;
+        color: white;
+        border-color: #152c55;
+    }
+
+    .probootstrap-cta .btn.btn-ghost:hover {
+        background: #ffffff;
+        color: #152c55;
+        border-color: #ffffff;
+    }
+    
