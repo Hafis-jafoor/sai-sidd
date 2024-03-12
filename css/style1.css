@@ -282,6 +282,7 @@
         transform: translateX(5px);
     }
     
+    /* enroll button and section */
     .probootstrap-cta {
         padding: 3em 0;
         background: #d8a025;
@@ -300,3 +301,7 @@
         border-color: #ffffff;
     }
     
+    /* pages section heading background */
+    .probootstrap-section.probootstrap-section-colored {
+        background: linear-gradient(#152c55,white);
+      }
