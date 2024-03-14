@@ -305,3 +305,29 @@
     .probootstrap-section.probootstrap-section-colored {
         background: linear-gradient(#152c55,white);
       }
+      
+      /* gallery */
+      /* CSS for the caption */
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+    
+      .portfolio-item .caption {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
+        color: #fff; /* Change the text color as needed */
+        padding: 10px;
+        text-align: center;
+        opacity: 0; /* Hide the caption by default */
+        transition: opacity 0.3s;
+      }
+    
+      .portfolio-item:hover .caption {
+        opacity: 1; /* Show the caption on hover */
+      }
