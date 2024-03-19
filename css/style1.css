@@ -304,30 +304,79 @@
     /* pages section heading background */
     .probootstrap-section.probootstrap-section-colored {
         background: linear-gradient(#152c55,white);
-      }
+    }
       
-      /* gallery */
-      /* CSS for the caption */
-      .portfolio-item {
+    /* gallery */
+    /* CSS for the caption */
+    .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    }
+
+    .portfolio-item .caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
+    color: #fff; /* Change the text color as needed */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Hide the caption by default */
+    transition: opacity 0.3s;
+    }
+
+    .portfolio-item:hover .caption {
+    opacity: 1; /* Show the caption on hover */
+    }
+
+    .full-height {
+        height: 100vh;
+    }
+
+    /* admission style highlights */
+    .facility {
         position: relative;
         overflow: hidden;
-        margin-bottom: 30px;
-      }
+    }
+      
+    .facility img {
+        transition: transform 0.3s;
+    }
+      
+    .facility:hover img {
+        transform: scale(1.1);
+    }
     
-      .portfolio-item .caption {
+    .facility-details {
         position: absolute;
         top: 50%;
-        left: 0;
-        right: 0;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
-        color: #fff; /* Change the text color as needed */
-        padding: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        opacity: 0; /* Hide the caption by default */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
         transition: opacity 0.3s;
-      }
+        opacity: 0;
+    }
     
-      .portfolio-item:hover .caption {
-        opacity: 1; /* Show the caption on hover */
-      }
+    .facility:hover .facility-details {
+        opacity: 1;
+    }
+
+    /* CSS */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .enlarge-image {
+    transition: transform 0.3s;
+  }
+  
+  .enlarge-image:hover {
+    transform: scale(1.1); /* Change the scale value to enlarge within its size */
+  }
+   
