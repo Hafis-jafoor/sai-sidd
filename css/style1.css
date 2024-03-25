@@ -269,6 +269,30 @@
         }
     }
 
+    @media screen and (max-width: 320px) {
+        .probootstrap-navbar .navbar-sai {
+        top: 0px !important;
+        }
+        .probootstrap-navbar .navbar-sai .heading{
+            font-size: 7px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: #152c55;
+        }
+    }
+
+    @media screen and (max-width: 308px) {
+        .probootstrap-navbar .navbar-sai {
+        top: 0px !important;
+        }
+        .probootstrap-navbar .navbar-sai .heading{
+            font-size: 6px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: #152c55;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         .navbar-sai {
             padding-top: 15px !important;
